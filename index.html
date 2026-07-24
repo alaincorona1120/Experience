@@ -8,14 +8,15 @@
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   :root{
-    --bg: #0A0D12;
-    --panel: #10151D;
-    --panel-2: #141B25;
-    --line: #232B38;
-    --text: #E8ECF1;
-    --muted: #8A93A3;
-    --signal: #FF5A36;
-    --verified: #3DDC97;
+    /* Light theme color variables (switched from dark -> light) */
+    --bg: #FFFFFF;
+    --panel: #F7FAFC; /* light surface */
+    --panel-2: #F1F5F9;
+    --line: #E6EEF4;
+    --text: #0A0D12; /* dark text */
+    --muted: #6B7280;
+    --signal: #FF5A36; /* accent */
+    --verified: #059669; /* green */
     --font-display: 'Space Grotesk', sans-serif;
     --font-body: 'Inter', sans-serif;
     --font-mono: 'IBM Plex Mono', monospace;
@@ -40,7 +41,7 @@
       linear-gradient(var(--line) 1px, transparent 1px),
       linear-gradient(90deg, var(--line) 1px, transparent 1px);
     background-size:64px 64px;
-    opacity:0.08;
+    opacity:0.04;
     pointer-events:none;
     z-index:0;
   }
@@ -89,7 +90,7 @@
   /* ---------- NAV ---------- */
   nav{
     position:sticky; top:0; z-index:10;
-    background:rgba(10,13,18,0.85);
+    background:rgba(255,255,255,0.85);
     backdrop-filter:blur(10px);
     border-bottom:1px solid var(--line);
   }
@@ -149,7 +150,7 @@
   }
   .hero-photo .scan{
     position:absolute; inset:0;
-    background:linear-gradient(180deg, transparent 0%, rgba(255,90,54,0.12) 100%);
+    background:linear-gradient(180deg, transparent 0%, rgba(255,90,54,0.06) 100%);
     pointer-events:none;
   }
   .hero-photo .tag{
@@ -158,7 +159,7 @@
     font-size:9.5px;
     letter-spacing:0.08em;
     color:var(--verified);
-    background:rgba(10,13,18,0.75);
+    background:rgba(255,255,255,0.75);
     padding:2px 6px;
   }
   @media (max-width:640px){
@@ -285,7 +286,7 @@
   .summary-text{
     max-width:70ch;
     font-size:16.5px;
-    color:#C6CCD6;
+    color:#475569;
   }
 
   /* ---------- EXPERIENCE ---------- */
@@ -323,7 +324,7 @@
     padding-left:20px;
     margin-bottom:9px;
     font-size:14.5px;
-    color:#C6CCD6;
+    color:#334155;
   }
   .role-entry li::before{
     content:'▸';
@@ -373,7 +374,7 @@
   }
   .cert-list li, .lang-row{ list-style:none; }
   .cert-list li{
-    font-size:14px; color:#C6CCD6;
+    font-size:14px; color:#334155;
     padding:9px 0; border-bottom:1px solid var(--line);
   }
   .cert-list li:last-child{ border-bottom:none; }
@@ -382,7 +383,7 @@
     grid-template-columns:1fr 64px;
     align-items:center;
     gap:12px;
-    font-size:14px; color:#C6CCD6;
+    font-size:14px; color:#334155;
     padding:9px 0; border-bottom:1px solid var(--line);
   }
   .lang-row:last-child{ border-bottom:none; }
@@ -394,7 +395,7 @@
     text-align:right;
     white-space:nowrap;
   }
-  .edu-block p{ font-size:14px; color:#C6CCD6; }
+  .edu-block p{ font-size:14px; color:#334155; }
   .edu-block .school{ font-family:var(--font-display); font-weight:600; font-size:16px; margin-bottom:4px; }
 
   /* ---------- CONTACT / CTA ---------- */
@@ -456,7 +457,7 @@
       <div class="eyebrow">Open to new engagement — Mid-Market / SMB AE</div>
       <h1>Alain R.<br>Corona</h1>
       <div class="role">Account Executive — SaaS, Cloud, Cybersecurity, FSM &amp; Custom AI Solutions</div>
-      <p class="lede">Bilingual, MEDDPICC-certified hunter with 5+ years closing complex, multi-stakeholder B2B deals across the U.S. and LATAM — full-cycle, from first call to signed contract.</p>
+      <p class="lede">Bilingual, MEDDPICC-certified hunter with 5+ years closing complex, multi-stakeholder B2B deals across the U.S. and LATAM — full-cycle, from first call to signed contract.[...]
       <div class="contact-row">
         <span>Miami, FL</span>
         <a href="mailto:alain.corona@gmail.com">alain.corona@gmail.com</a>
@@ -517,7 +518,7 @@
       <span class="rule"></span>
     </div>
     <p class="summary-text reveal">
-      Bilingual (English/Spanish) Account Executive with 5+ years of B2B software sales experience across SaaS, cloud, cybersecurity, and tailored technology solutions. A proven hunter with a track record of generating net-new revenue across SMB and Mid-Market segments, expanding strategic accounts, and closing complex, multi-stakeholder deals — skilled in consultative, MEDDPICC-driven selling to C-level executives and cross-functional buying committees.
+      Bilingual (English/Spanish) Account Executive with 5+ years of B2B software sales experience across SaaS, cloud, cybersecurity, and tailored technology solutions. A proven hunter with a tra[...]
     </p>
   </div>
 </section>
@@ -538,7 +539,7 @@
       <div class="role-company">Chetu Inc. — Custom AI &amp; Digital Transformation Solutions, Sunrise, FL</div>
       <ul>
         <li>Owned full-cycle sales for custom AI and digital-transformation solutions across an assigned territory, sourcing and closing net-new logos as sole hunter for the region.</li>
-        <li>Ran consultative discovery to uncover business objectives and technical environments, aligning delivery models (on-premises, nearshore, hybrid) to close complex, multi-stakeholder deals.</li>
+        <li>Ran consultative discovery to uncover business objectives and technical environments, aligning delivery models (on-premises, nearshore, hybrid) to close complex, multi-stakeholder dea[...]
         <li>Managed key accounts post-sale to identify expansion and cross-sell opportunities, including multi-year development roadmaps and additional project phases.</li>
       </ul>
     </div>
@@ -563,7 +564,7 @@
       </div>
       <div class="role-company">Over IT — Field Service Management, Miami, FL</div>
       <ul>
-        <li>Exceeded annual lead-generation quota in back-to-back years (110% in 2022, 105% in 2023), driving high-quality Sales Accepted Leads for mission-critical, C-level buying committees.</li>
+        <li>Exceeded annual lead-generation quota in back-to-back years (110% in 2022, 105% in 2023), driving high-quality Sales Accepted Leads for mission-critical, C-level buying committees.</l[...]
         <li>Expanded U.S. market share while building LATAM pipeline across Colombia, Argentina, and Peru, engaging Field Operations Directors and VP Operations.</li>
       </ul>
     </div>
@@ -591,7 +592,7 @@
         <div class="role-title">Partner / Founder</div>
         <div class="role-dates">2010 – 2018</div>
         <div class="role-company" style="margin-bottom:0;">La Red Music Entertainment, Miami, FL</div>
-        <p>Built and ran a full-service sales, marketing, and artist-management agency generating $5M+ in client revenue; co-produced a 3-day B2B industry event, selling event rights to the Bogotá Chamber of Commerce.</p>
+        <p>Built and ran a full-service sales, marketing, and artist-management agency generating $5M+ in client revenue; co-produced a 3-day B2B industry event, selling event rights to the Bogot[...]
       </div>
     </div>
   </div>
